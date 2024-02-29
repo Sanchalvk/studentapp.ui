@@ -15,10 +15,10 @@ pipeline {
             steps {
                 echo "Testing with SonarQube"
                 sh '''
-               mvn clean verify sonar:sonar \
-                -Dsonar.projectKey=demo \
-                -Dsonar.host.url=http://16.16.144.44:9000 \
-                -Dsonar.login=sqp_68fd9b54625510f7fb41ffec064f25ddd683c6e4
+             mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=demo \
+  -Dsonar.host.url=http://3.138.244.63:9000 \
+  -Dsonar.login=sqp_66ba33649710c9dd5bdb6cbe4ef736221ed87cea
                 '''
             }
          }
